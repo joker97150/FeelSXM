@@ -27,12 +27,17 @@ Inspiration: wearesxm.com — but more refined and minimal. Vibe: accessible lux
 - **WhatsApp integration**: client-side `window.open(buildWhatsappUrl(message))` in `/app/frontend/src/lib/site.js`. Number is a placeholder (`15550001234`) until the user provides the real one.
 - **Lead persistence**: `POST /api/bookings` is called before the WhatsApp redirect — the captain has a backup record in MongoDB.
 
-## Implemented (2025-12)
+## Implemented
+### Iteration 1 (2025-12)
 - Backend: `GET /api/`, `POST /api/bookings`, `GET /api/bookings` — verified by pytest (100% pass).
-- Frontend: All 5 pages, sticky glass header with mobile hamburger, dark footer, scroll-to-top, hero with Unsplash catamaran image, `What we offer` (3 cards), `Why Feel SXM` (3 columns), testimonials (3 placeholder quotes), CTA strip.
-- Boats page: 6 placeholder boats (Lagoon 50, Fountaine Pajot 44, Bénéteau Oceanis 46, Sunseeker Predator 60, Axopar 37, Leopard 45) with type/budget/occasion filters. Request flow prefills `/book?boat=...&type=...`.
-- Booking form: required-field validation, posts lead to backend, opens WhatsApp pre-filled in new tab, displays success state with manual fallback link.
-- All interactive elements have `data-testid` attributes.
+- Frontend: 5 pages, sticky glass header, dark footer, hero with catamaran, "What we offer" 3 cards, "Why Feel SXM" 3 columns, testimonials, CTA strip, full booking form with WhatsApp pre-fill.
+
+### Iteration 2 (2025-12)
+- New `/experiences` page (intermediate choice) — every "Book your experience" CTA (header, hero, About, Activities, Footer) now routes there. Two cards: Private boat charter (→ /boats) and Jet ski (→ /book?type=Jet%20ski).
+- Real fleet replacing placeholders: BRIT'SEA (Captain's Pick — featured), YES DARLING, INFINITY DREAMS, FREE SPIRIT, NATURAL MYSTIC, POSITIVE VIBES.
+- Real boat photos extracted from supplier PDF brochures, optimised to ≤500KB JPEGs and stored in `/app/frontend/public/boats/`.
+- BoatModal component (`/app/frontend/src/components/BoatModal.jsx`): full-screen overlay with image gallery + thumbnails, structured rate table (day charters / sunset / transfers / add-ons), notes, and "Request this boat" CTA. Closes on X / ESC / backdrop click. Body scroll locked while open.
+- Real WhatsApp: `+590 690 56 89 95`. Real Instagram: `@FEELSXM`.
 
 ## Placeholders (replace before launch)
 - WhatsApp: `+1 (555) 000-1234` — `/app/frontend/src/lib/site.js` → `whatsappNumber` and `whatsappDisplay`.

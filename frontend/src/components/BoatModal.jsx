@@ -51,8 +51,16 @@ export default function BoatModal({ boat, open, onClose }) {
       />
 
       {/* Sheet */}
-      <div className="relative min-h-full flex items-start justify-center p-0 sm:p-6 lg:p-10">
-        <div className="relative w-full max-w-6xl bg-white shadow-2xl my-0 sm:my-6 animate-in">
+      <div
+        className="relative min-h-full flex items-start justify-center p-0 sm:p-6 lg:p-10 pointer-events-none"
+        onClick={(e) => {
+          if (e.target === e.currentTarget) onClose();
+        }}
+      >
+        <div
+          className="relative w-full max-w-6xl bg-white shadow-2xl my-0 sm:my-6 animate-in pointer-events-auto"
+          onClick={(e) => e.stopPropagation()}
+        >
           {/* Close */}
           <button
             onClick={onClose}
