@@ -53,7 +53,7 @@ export default function Book() {
 
   const buildMessage = () => {
     const lines = [
-      "Hello Feel SXM 👋",
+      "Hello Feel SXM \u{1F44B}",
       "",
       `Name: ${form.name || "—"}`,
       `Email: ${form.email || "—"}`,
