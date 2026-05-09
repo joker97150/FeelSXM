@@ -1,5 +1,5 @@
 // Real fleet — Feel SXM 2026.
-// BRIT'SEA is the featured boat (girlfriend's boat, displayed prominently).
+// SEA YA is the featured boat (Captain's pick, displayed prominently).
 // Photos are extracted from official partner brochures and stored in /public/boats/.
 
 export const BOAT_TYPES = ["Catamaran", "Motor Yacht", "Powerboat"];
@@ -12,8 +12,8 @@ const r = (label, price) => ({ label, price });
 
 export const BOATS = [
   {
-    id: "britsea",
-    name: "BRIT'SEA",
+    id: "sea-ya",
+    name: "SEA YA",
     model: "Boston Whaler 27 Vantage",
     type: "Powerboat",
     length: "27 ft",
@@ -40,12 +40,12 @@ export const BOATS = [
     image: "/boats/britsea_00_aerial.jpg",
     gallery: [
       "/boats/britsea_00_aerial.jpg",
-      "/boats/britsea_01_family.jpg",
+      "/boats/britsea_06_full.jpg",
+      "/boats/britsea_05_engines.jpg",
       "/boats/britsea_02_captain.jpg",
+      "/boats/britsea_01_family.jpg",
       "/boats/britsea_03_couple.jpg",
       "/boats/britsea_04_pineapple.jpg",
-      "/boats/britsea_05_engines.jpg",
-      "/boats/britsea_06_full.jpg",
     ],
     rates: {
       currency: "€",
