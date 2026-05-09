@@ -119,25 +119,40 @@ export const BOATS = [
     ],
     rates: {
       currency: "€",
-      group: "Up to 15 guests included on half-day · 12 on full-day · extras priced per person",
-      destinations: ["Saint-Martin", "Anguilla", "St Barth"],
-      matrix: [
-        { label: "Half-day", duration: "4h", prices: ["€3,300", "€4,100", "€4,500"] },
-        { label: "Half-day", duration: "6h", prices: ["€4,000", "—", "—"] },
-        { label: "Full-day", duration: "8h", prices: ["€4,500", "€5,300", "€5,900"] },
-        { label: "Sunset", duration: "evening", prices: ["€2,150", "€2,450", "—"] },
-      ],
-      sections: [
+      group: "15 guests included from Saint-Martin · 12 guests from Anguilla & St Barth · extras priced per person",
+      matrices: [
         {
-          title: "Special routes",
-          items: [
-            r("Half-day SXM ↔ St Barth (4h)", "€4,100"),
-            r("Half-day SXM ↔ Anguilla (4h)", "€3,800"),
-            r("Full-day SXM ↔ St Barth", "€4,950"),
-            r("Full-day SXM ↔ Anguilla", "€4,800"),
-            r("Full-day Anguilla + St Barth combo", "€6,800"),
+          title: "From Saint-Martin (SXM)",
+          subtitle: "Up to 15 guests",
+          destinations: ["Stay in SXM", "→ St Barth", "→ Anguilla"],
+          rows: [
+            { label: "Half-day", duration: "4h", prices: ["€3,300", "€4,100", "€3,800"] },
+            { label: "Half-day", duration: "6h", prices: ["€4,000", "—", "—"] },
+            { label: "Full-day", duration: "8h", prices: ["€4,500", "€4,950", "€4,800"] },
+            { label: "Sunset cruise", duration: "evening", prices: ["€2,150", "—", "—"] },
           ],
         },
+        {
+          title: "From Anguilla (AXA)",
+          subtitle: "Up to 12 guests",
+          destinations: ["Stay in AXA", "→ Saint-Martin", "→ St Barth"],
+          rows: [
+            { label: "Half-day", duration: "4h", prices: ["€4,100", "€4,550", "€5,500"] },
+            { label: "Full-day", duration: "8h", prices: ["€5,300", "€5,700", "€6,800"] },
+            { label: "Sunset cruise", duration: "evening", prices: ["€2,450", "—", "—"] },
+          ],
+        },
+        {
+          title: "From St Barth (SBH)",
+          subtitle: "Up to 12 guests",
+          destinations: ["Stay in SBH", "→ Saint-Martin", "→ Anguilla"],
+          rows: [
+            { label: "Half-day", duration: "4h", prices: ["€4,500", "€4,950", "€5,500"] },
+            { label: "Full-day", duration: "8h", prices: ["€5,900", "€6,500", "€6,800"] },
+          ],
+        },
+      ],
+      sections: [
         {
           title: "Extras",
           items: [
