@@ -111,8 +111,8 @@ export const BOATS = [
     image: "/boats/yesdarling_a.jpg",
     gallery: [
       "/boats/yesdarling_a.jpg",
-      "/boats/yesdarling_b.jpg",
-      "/boats/yesdarling_c.jpg",
+      "/boats/yesdarling_g.jpg",
+      "/boats/yesdarling_h.jpg",
       "/boats/yesdarling_d.jpg",
       "/boats/yesdarling_e.jpg",
       "/boats/yesdarling_f.jpg",
@@ -120,34 +120,27 @@ export const BOATS = [
     rates: {
       currency: "€",
       group: "Up to 15 guests included on half-day · 12 on full-day · extras priced per person",
+      destinations: ["Saint-Martin", "Anguilla", "St Barth"],
+      matrix: [
+        { label: "Half-day", duration: "4h", prices: ["€3,300", "€4,100", "€4,500"] },
+        { label: "Half-day", duration: "6h", prices: ["€4,000", "—", "—"] },
+        { label: "Full-day", duration: "8h", prices: ["€4,500", "€5,300", "€5,900"] },
+        { label: "Sunset", duration: "evening", prices: ["€2,150", "€2,450", "—"] },
+      ],
       sections: [
         {
-          title: "Half-day (4h)",
+          title: "Special routes",
           items: [
-            r("Saint-Martin", "€3,300 + €5/pp reserve"),
-            r("Saint-Martin (6h)", "€4,000 + €5/pp reserve"),
-            r("SXM ↔ St Barth", "€4,100 + €23/pp customs"),
-            r("SXM ↔ Anguilla", "€3,800 + €40/pp customs"),
-            r("St Barth", "€4,500"),
-            r("Anguilla", "€4,100 + €40/pp customs"),
+            r("Half-day SXM ↔ St Barth (4h)", "€4,100"),
+            r("Half-day SXM ↔ Anguilla (4h)", "€3,800"),
+            r("Full-day SXM ↔ St Barth", "€4,950"),
+            r("Full-day SXM ↔ Anguilla", "€4,800"),
+            r("Full-day Anguilla + St Barth combo", "€6,800"),
           ],
         },
         {
-          title: "Full-day (8h)",
+          title: "Extras",
           items: [
-            r("Saint-Martin", "€4,500 + €5/pp reserve"),
-            r("SXM ↔ St Barth", "€4,950 + €23/pp customs"),
-            r("SXM ↔ Anguilla", "€4,800 + €40/pp customs"),
-            r("St Barth", "€5,900"),
-            r("Anguilla", "€5,300 + €40/pp customs"),
-            r("AXA + SBH combo", "€6,800 + €63/pp customs"),
-          ],
-        },
-        {
-          title: "Sunset & extras",
-          items: [
-            r("Sunset Saint-Martin", "€2,150 + €5/pp reserve"),
-            r("Sunset Anguilla", "€2,450 + €40/pp customs"),
             r("Extra hour SXM", "€400/h"),
             r("Extra hour SBH/AXA", "€450/h"),
             r("Additional adult (after 12)", "€120 pp"),
@@ -156,6 +149,7 @@ export const BOATS = [
         },
       ],
       notes: [
+        "Per-person fees (not included): €5/pp Saint-Martin · €23/pp St Barth · €40/pp Anguilla · €63/pp for the Anguilla + St Barth combo.",
         "Includes fuel, continental breakfast, fruit & aperitif platter.",
         "Premium alcohol selection available on request.",
         "+20% surcharge Dec 20 – Jan 10. 4% credit-card fee on payments.",
