@@ -35,7 +35,7 @@ export default function Boats() {
             A small, hand-picked fleet for <span className="italic">your</span> day at sea.
           </h1>
           <p className="mt-8 max-w-xl text-slate-600 text-base lg:text-lg">
-            Six boats, three styles, one promise — the right vessel and crew for the
+            Eight boats, four styles, one promise — the right vessel and crew for the
             day you have in mind. Tap any boat to see all rates.
           </p>
         </div>

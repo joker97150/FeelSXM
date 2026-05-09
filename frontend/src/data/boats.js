@@ -171,11 +171,11 @@ export const BOATS = [
   {
     id: "infinity-dreams",
     name: "INFINITY DREAMS",
-    model: "50 ft Catamaran",
+    model: "Fountaine Pajot 50 Catamaran",
     type: "Catamaran",
-    length: "50 ft",
+    length: "50 ft / 15 m",
     capacity: 28,
-    capacityNote: "Up to 28 day guests · price for 12 pax",
+    capacityNote: "Up to 28 day guests · captain & 3 crew",
     priceFrom: 2100,
     currency: "$",
     priceLabel: "from $2,100 half-day",
@@ -183,19 +183,24 @@ export const BOATS = [
     occasion: "Friends group",
     featured: false,
     description:
-      "A peaceful, spacious 50ft catamaran with full enclosure, freshwater shower, marine sound system and a generous sunbathing area.",
+      "A peaceful, spacious 50ft Fountaine Pajot catamaran with full enclosure, freshwater shower, marine sound system and a generous sunbathing area.",
     longDescription:
-      "Two Yanmar 80hp engines, cabin, toilet & shower, full enclosure to stay dry, Bluetooth sound system. French breakfast on full-day trips, light snacks and an open bar (rhum punch, champagne, beers, soft drinks).",
+      "Sail in peace and luxury. Two Yanmar 80hp engines, cabin, toilet & shower, full enclosure to stay dry, Bluetooth sound system. French breakfast on full-day trips, light snacks and an open bar (rhum punch, champagne, beers, soft drinks).",
     highlights: [
-      "28 guests capacity",
+      "Up to 28 guests · captain + 3 crew",
       "Full enclosure & shaded deck",
       "Bluetooth audio system",
       "Paddle board, kayak, snorkel gear",
       "French breakfast on full-day trips",
       "Open bar included",
     ],
-    image: "/boats/infinity_a.jpg",
-    gallery: ["/boats/infinity_a.jpg", "/boats/infinity_b.jpg"],
+    image: "/boats/infinity_01.jpg",
+    gallery: [
+      "/boats/infinity_01.jpg",
+      "/boats/infinity_02.jpg",
+      "/boats/infinity_03.jpg",
+      "/boats/infinity_04.jpg",
+    ],
     rates: {
       currency: "$",
       group: "Price for 12 pax · +$100 per extra guest",
@@ -225,11 +230,11 @@ export const BOATS = [
   {
     id: "free-spirit",
     name: "FREE SPIRIT",
-    model: "44 ft Offshore Powerboat",
+    model: "Concept 44 — Offshore Powerboat",
     type: "Powerboat",
-    length: "44 ft",
+    length: "44 ft / 13.4 m",
     capacity: 12,
-    capacityNote: "Family-style offshore powerboat",
+    capacityNote: "Up to 12 guests · captain & crew",
     priceFrom: 1150,
     currency: "$",
     priceLabel: "from $1,150 half-day",
@@ -237,17 +242,23 @@ export const BOATS = [
     occasion: "Family day",
     featured: false,
     description:
-      "High-powered offshore powerboat blending performance and luxury — 44 ft of confort, pleasure and Caribbean lifestyle.",
+      "A spacious Concept 44 — perfect for discovering hidden gems and inaccessible coves. Offshore performance with luxurious comfort, day or night.",
     longDescription:
-      "Three 300hp Mercury engines, fresh water shower, full enclosure, Bluetooth audio. Open bar, snorkel gear and beach towels included.",
+      "One of our most popular speedboats. Three 300hp Mercury V8 engines, full enclosure, fresh water shower, audio marine system with Bluetooth and a spacious layout. Open bar (local rhum punch, champagne, beers, softs), snorkeling gear and beach towels included.",
     highlights: [
-      "3 × 300hp Mercury engines",
+      "3 × 300hp Mercury V8 engines",
+      "Up to 12 guests · captain + crew",
       "Saint-Martin · Anguilla · St Barth",
-      "Day & night transfers available",
-      "Snorkel gear & beach towels included",
+      "Full enclosure, freshwater shower",
+      "Open bar & snorkel gear included",
     ],
-    image: "/boats/freespirit_a.jpg",
-    gallery: ["/boats/freespirit_a.jpg", "/boats/freespirit_b.jpg"],
+    image: "/boats/freespirit_01.jpg",
+    gallery: [
+      "/boats/freespirit_01.jpg",
+      "/boats/freespirit_02.jpg",
+      "/boats/freespirit_03.jpg",
+      "/boats/freespirit_04.jpg",
+    ],
     rates: {
       currency: "$",
       sections: [
@@ -284,11 +295,11 @@ export const BOATS = [
   {
     id: "natural-mystic",
     name: "NATURAL MYSTIC",
-    model: "37 ft Anguillan Powerboat",
+    model: "Rebel 37 — Anguillan Powerboat",
     type: "Powerboat",
-    length: "37 ft",
-    capacity: 10,
-    capacityNote: "Spacious, family-friendly",
+    length: "37 ft / 11.3 m",
+    capacity: 12,
+    capacityNote: "Up to 12 guests · captain & crew",
     priceFrom: 950,
     currency: "$",
     priceLabel: "from $950 half-day",
@@ -296,17 +307,24 @@ export const BOATS = [
     occasion: "Family day",
     featured: false,
     description:
-      "Anguillan-built powerboat with high-quality materials and a spacious interior — perfect for a farniente day or for adrenaline lovers chasing tubing and snorkel spots.",
+      "An Anguillan-built Rebel 37, entirely redesigned with high-quality materials. Spacious interior conceived for families with children or trips with friends.",
     longDescription:
-      "Two 300hp Mercury engines, sunbed, fresh water shower, full enclosure, Bluetooth audio. Paddle board included, tubing on request.",
+      "Comfortable and spacious. Two 300hp Mercury V8 engines take you to the surrounding islands in no time. Full enclosure, freshwater shower, audio marine system with Bluetooth. Paddle board, snorkel gear, beach towels and an open bar (rhum punch, champagne, beers, softs) included.",
     highlights: [
-      "2 × 300hp Mercury engines",
+      "2 × 300hp Mercury V8 engines",
+      "Up to 12 guests · captain + crew",
       "Paddle board included",
       "Tubing on request",
       "Saint-Martin · Anguilla · St Barth",
+      "Open bar & snorkel gear included",
     ],
-    image: "/boats/natural_a.jpg",
-    gallery: ["/boats/natural_a.jpg", "/boats/natural_b.jpg"],
+    image: "/boats/natural_01.jpg",
+    gallery: [
+      "/boats/natural_01.jpg",
+      "/boats/natural_02.jpg",
+      "/boats/natural_03.jpg",
+      "/boats/natural_04.jpg",
+    ],
     rates: {
       currency: "$",
       sections: [
@@ -345,9 +363,9 @@ export const BOATS = [
     name: "POSITIVE VIBES",
     model: "Cigarette 36",
     type: "Powerboat",
-    length: "36 ft",
-    capacity: 10,
-    capacityNote: "Smooth open-bow with shaded tee top",
+    length: "36 ft / 11 m",
+    capacity: 12,
+    capacityNote: "Up to 12 guests · captain & crew",
     priceFrom: 950,
     currency: "$",
     priceLabel: "from $950 half-day",
@@ -355,16 +373,25 @@ export const BOATS = [
     occasion: "Friends group",
     featured: false,
     description:
-      "A Cigarette 36 with a smooth, comfortable ride. Open bow for room to lounge, tee top for shade — Caribbean style at its purest.",
+      "A smooth, stylish Cigarette 36 with an open bow for room to lounge and a tee top extending to the stern for shade. Caribbean cruising at its purest.",
     longDescription:
-      "Saint-Martin · Anguilla · St Barth. Comfortable cruise, shaded tee top, snorkel gear, beach towels and an open bar included.",
+      "Twin 350hp Mercury L6 engines deliver thrill and reliability. Full enclosure, fresh water shower, marine audio system with Bluetooth, spacious layout. Open bar (rhum punch, champagne, beers, softs), snorkel gear and beach towels included.",
     highlights: [
+      "2 × 350hp Mercury L6 engines",
+      "Up to 12 guests · captain + crew",
       "Open bow with shaded tee top",
       "Saint-Martin · Anguilla · St Barth",
-      "Drone & extras on request",
+      "Open bar & snorkel gear included",
     ],
-    image: "/boats/positive_a.jpg",
-    gallery: ["/boats/positive_a.jpg", "/boats/positive_b.jpg"],
+    image: "/boats/positive_01.jpg",
+    gallery: [
+      "/boats/positive_01.jpg",
+      "/boats/positive_02.jpg",
+      "/boats/positive_05.jpg",
+      "/boats/positive_06.jpg",
+      "/boats/positive_03.jpg",
+      "/boats/positive_04.jpg",
+    ],
     rates: {
       currency: "$",
       sections: [
@@ -398,6 +425,133 @@ export const BOATS = [
       ],
     },
   },
+  {
+    id: "vandutch-48",
+    name: "VANDUTCH 48",
+    model: "VanDutch 48 — Motor Yacht",
+    type: "Motor Yacht",
+    length: "48 ft / 14 m",
+    capacity: 12,
+    capacityNote: "Up to 12 guests · captain & crew",
+    priceFrom: 3000,
+    currency: "$",
+    priceLabel: "from $3,000 half-day",
+    budget: "$3000+",
+    occasion: "Special event",
+    featured: false,
+    description:
+      "Sleek 48ft VanDutch motor yacht — a modern Italian icon designed for elegant Caribbean cruising at speeds up to 40 knots.",
+    longDescription:
+      "Twin 725hp engines, JL sound system, interior kitchen, full enclosure, fresh water shower and a generous, sun-bathed lounge. Cruise to St Barth, Anguilla or Tintamarre in style. Open bar, snorkel gear and beach towels included.",
+    highlights: [
+      "2 × 725hp engines · top 40 knots",
+      "Up to 12 guests · captain + crew",
+      "JL sound system · interior kitchen",
+      "Full enclosure, freshwater shower",
+      "Saint-Martin · Anguilla · St Barth",
+      "Open bar & snorkel gear included",
+    ],
+    image: "/boats/vandutch48_01.jpg",
+    gallery: [
+      "/boats/vandutch48_01.jpg",
+      "/boats/vandutch48_02.jpg",
+      "/boats/vandutch48_03.jpg",
+      "/boats/vandutch48_04.jpg",
+      "/boats/vandutch48_05.jpg",
+    ],
+    rates: {
+      currency: "$",
+      sections: [
+        {
+          title: "Day charters from Saint-Martin",
+          items: [
+            r("Half-day SXM (4h)", "$3,000"),
+            r("Full-day SXM (7h)", "$4,500"),
+          ],
+        },
+        {
+          title: "Add-ons",
+          items: [
+            r("Fruit plate", "$80"),
+            r("Drone footage", "$150"),
+            r("Extra hour", "$500"),
+            r("Paddle board", "$100"),
+            r("Seabob", "$400"),
+            r("E-foil", "$400"),
+          ],
+        },
+      ],
+      notes: [
+        "Immigration tax: $20–$45 per person (Anguilla / St Barth) — added at booking.",
+        "+20% surcharge during Christmas period (Dec 20 – Jan 7).",
+        "Card fees not included.",
+      ],
+    },
+  },
+  {
+    id: "vandutch-55",
+    name: "VANDUTCH 55",
+    model: "VanDutch 55 — Motor Yacht",
+    type: "Motor Yacht",
+    length: "55 ft / 16 m",
+    capacity: 12,
+    capacityNote: "Up to 12 guests · captain & crew",
+    priceFrom: 3500,
+    currency: "$",
+    priceLabel: "from $3,500 half-day",
+    budget: "$3000+",
+    occasion: "Special event",
+    featured: false,
+    description:
+      "An elegant 55ft VanDutch motor yacht — clean lines, an air-conditioned master cabin and 40 knots of pure Caribbean cruising.",
+    longDescription:
+      "Twin 900hp engines, JL sound system, master cabin with A/C, compact kitchen and bathroom. A wide shaded lounge area perfect for groups up to 12. Saint-Martin, Anguilla and St Barth in true VanDutch style.",
+    highlights: [
+      "2 × 900hp engines · top 40 knots",
+      "Up to 12 guests · captain + crew",
+      "Air-conditioned master cabin",
+      "JL sound system · kitchen & bathroom",
+      "Saint-Martin · Anguilla · St Barth",
+      "Open bar & snorkel gear included",
+    ],
+    image: "/boats/vandutch55_01.jpg",
+    gallery: [
+      "/boats/vandutch55_01.jpg",
+      "/boats/vandutch55_03.jpg",
+      "/boats/vandutch55_04.jpg",
+      "/boats/vandutch55_05.jpg",
+      "/boats/vandutch55_02.jpg",
+    ],
+    rates: {
+      currency: "$",
+      sections: [
+        {
+          title: "Day charters from Saint-Martin",
+          items: [
+            r("Half-day SXM (4h)", "$3,500"),
+            r("Full-day SXM (7h)", "$5,000"),
+          ],
+        },
+        {
+          title: "Add-ons",
+          items: [
+            r("Fruit plate", "$80"),
+            r("Drone footage", "$150"),
+            r("Extra hour", "$500"),
+            r("Paddle board", "$100"),
+            r("Seabob", "$400"),
+            r("E-foil", "$400"),
+          ],
+        },
+      ],
+      notes: [
+        "Immigration tax: $20–$45 per person (Anguilla / St Barth) — added at booking.",
+        "+20% surcharge during Christmas period (Dec 20 – Jan 7).",
+        "Card fees not included.",
+      ],
+    },
+  },
+
 ];
 
 export const HERO_IMAGE =
