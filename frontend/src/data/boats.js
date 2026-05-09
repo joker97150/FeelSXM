@@ -573,8 +573,8 @@ export const EXPERIENCES = [
     desc: "Half-day adventures across the lagoon and into hidden coves. We arrange everything — just show up.",
     image:
       "https://images.unsplash.com/photo-1764132868176-e1abc06ae538?crop=entropy&cs=srgb&fm=jpg&q=85&w=1600&auto=format&fit=crop",
-    cta: "Request a jet ski",
-    href: "/book?type=Jet%20ski",
+    cta: "See all rides",
+    href: "/jetski",
   },
 ];
 
