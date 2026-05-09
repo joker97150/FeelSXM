@@ -28,7 +28,7 @@ export const BOATS = [
     description:
       "The legendary Boston Whaler 27 Vantage — speed, stability and unsinkable design. A captain favourite for hopping between Saint-Martin, Anguilla and St Barth in pure comfort.",
     longDescription:
-      "Step aboard our luxury day-charter boat. Twin Mercury engines, freshwater shower, snorkel gear, paddle board and a Pina Colada blender on board. Drinks (softs, beer, wine and basic cocktails) and light snacks are included.\n\nMeet Captain Brithany — one of the only female captains on the island. She has spent her whole life at sea and the past seven years working as a professional captain. With a background in marine biology and a deep passion for the ocean, she knows the marine life and every hidden corner of Saint-Martin, St Barth and Anguilla like the back of her hand.",
+      "Step aboard our luxury day-charter boat. Twin Mercury engines, freshwater shower, snorkel gear, paddle board and a Pina Colada blender on board. Drinks (softs, beer, wine and basic cocktails) and light snacks are included.\n\nMeet Captain Brithany, one of the rare women captains navigating these Caribbean waters. She has spent her whole life at sea and the past seven years working as a professional captain. With a background in marine biology and a deep passion for the ocean, she knows the marine life and every hidden corner of Saint-Martin, St Barth and Anguilla like the back of her hand.",
     highlights: [
       "Twin high-performance Mercury engines",
       "Unsinkable Boston Whaler hull",
