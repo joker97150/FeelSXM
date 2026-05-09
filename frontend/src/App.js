@@ -6,6 +6,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import Boats from "./pages/Boats";
+import Experiences from "./pages/Experiences";
 import Activities from "./pages/Activities";
 import About from "./pages/About";
 import Book from "./pages/Book";
@@ -27,6 +28,7 @@ function App() {
         <div className="flex-1">
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/experiences" element={<Experiences />} />
             <Route path="/boats" element={<Boats />} />
             <Route path="/activities" element={<Activities />} />
             <Route path="/about" element={<About />} />

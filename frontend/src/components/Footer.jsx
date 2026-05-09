@@ -28,7 +28,7 @@ export default function Footer() {
               <li><Link to="/boats" data-testid="footer-link-boats" className="hover:text-sxm-coral transition-colors">Boats</Link></li>
               <li><Link to="/activities" data-testid="footer-link-activities" className="hover:text-sxm-coral transition-colors">Activities</Link></li>
               <li><Link to="/about" data-testid="footer-link-about" className="hover:text-sxm-coral transition-colors">About</Link></li>
-              <li><Link to="/book" data-testid="footer-link-book" className="hover:text-sxm-coral transition-colors">Book</Link></li>
+              <li><Link to="/experiences" data-testid="footer-link-experiences" className="hover:text-sxm-coral transition-colors">Book</Link></li>
             </ul>
           </div>
 

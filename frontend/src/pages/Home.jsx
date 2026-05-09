@@ -38,7 +38,7 @@ export default function Home() {
           </p>
           <div className="mt-10 reveal reveal-delay-3">
             <Link
-              to="/book"
+              to="/experiences"
               data-testid="hero-cta-book"
               className="inline-flex items-center gap-3 px-8 py-4 bg-white text-sxm-deep hover:bg-sxm-coral hover:text-white transition-all duration-500 text-sm tracking-wider rounded-sm"
             >
@@ -197,7 +197,7 @@ export default function Home() {
           </div>
           <div className="lg:col-span-4 lg:text-right">
             <Link
-              to="/book"
+              to="/experiences"
               data-testid="cta-strip-book"
               className="inline-flex items-center gap-3 px-8 py-4 bg-sxm-coral text-sxm-deep hover:bg-white transition-colors text-sm tracking-wider rounded-sm"
             >

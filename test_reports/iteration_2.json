@@ -1,0 +1,38 @@
+{
+  "summary": "Iteration 2 frontend regression test for Feel SXM. Verified all CTAs route to /experiences, /experiences page renders both experience cards with correct links, /boats uses real fleet (6 boats) with BRIT'SEA as Captain's Pick featured, BoatModal opens with 5 thumbs / rates / request CTA, thumb click swaps image, ESC closes modal, request-boat CTA prefills /book?boat=BRIT%27SEA, filters hide featured + show filtered grid, all boat photos load successfully, footer + About + Activities CTAs all point to /experiences. 30/32 checks passed. Two related failures: clicking the modal backdrop (outside the white sheet) does NOT close the modal, and as a downstream effect body overflow is not restored.",
+  "backend_issues": {
+    "critical": [],
+    "minor": []
+  },
+  "frontend_issues": {
+    "ui_bugs": [
+      {
+        "component": "BoatModal",
+        "issue": "Clicking on the dimmed backdrop area (outside the white sheet) does NOT close the modal. The user is therefore trapped unless they hit ESC or the X button. ESC + X close work correctly.",
+        "selector": "[data-testid=\"boat-modal-backdrop\"]",
+        "priority": "MEDIUM"
+      }
+    ],
+    "integration_issues": [],
+    "design_issues": []
+  },
+  "test_report_links": ["/app/test_reports/iteration_2.json"],
+  "action_items": [
+    "Fix BoatModal backdrop close: in /app/frontend/src/components/BoatModal.jsx, the backdrop <button data-testid=\"boat-modal-backdrop\" className=\"fixed inset-0 ...\"/> is followed by a sibling <div className=\"relative min-h-full flex items-start justify-center p-0 sm:p-6 lg:p-10\"> that visually overlaps it. Empty-area clicks land on the wrapper div (which has no onClick). Two clean fixes: (a) add onClick={(e)=>{ if(e.target===e.currentTarget) onClose(); }} to that wrapper div, or (b) wrap everything in a single clickable backdrop and stop propagation on the inner sheet (e.g. <div onClick={onClose}> ... <div onClick={(e)=>e.stopPropagation()}>{sheet}</div></div>). After fix, body.style.overflow will also reset correctly because onClose runs."
+  ],
+  "critical_code_review_comments": [
+    "BoatModal backdrop close pattern is broken: the .fixed.inset-0 backdrop <button> is rendered as a sibling BEFORE the .relative wrapper that contains the sheet, so the wrapper paints on top and swallows backdrop clicks. ESC handler and close button work because they don't depend on click-through.",
+    "Minor: BoatModal uses two useEffects for body-overflow lock and ESC; consider consolidating. Body overflow cleanup on unmount is correct, but on navigation triggered from the request CTA, onClose is called explicitly first, which is fine.",
+    "Boats.jsx and BoatModal.jsx are well-structured (~225 / ~213 lines, under 700-line threshold), data-testids are consistent, code review is clean.",
+    "data/boats.js is large (470 lines). Acceptable as data file but could later be split into BOATS, EXPERIENCES, SERVICES, TESTIMONIALS files for clarity.",
+    "BoatModal navigates with encodeURIComponent(boat.name) so BRIT'SEA -> BRIT%27SEA — correct."
+  ],
+  "updated_files": [],
+  "success_rate": {"backend": "not tested (frontend-only request)", "frontend": "94% (30/32)"},
+  "test_credentials": "n/a",
+  "seed_data_creation": "none",
+  "retest_needed": true,
+  "main_agent_can_self_test": true,
+  "context_for_next_testing_agent": "All routing/CTA flows, modal open/thumbs/rates/request, filters, footer-link-experiences, About/Activities CTAs and boat image loading are verified working. Only remaining bug is BoatModal backdrop click behavior — see action_items. Backend was not tested (request was frontend-only) and was reported 100% green in iteration_1. Use REACT_APP_BACKEND_URL=https://island-charters.preview.emergentagent.com.",
+  "rca of the issue": "BoatModal.jsx renders <button data-testid='boat-modal-backdrop' class='fixed inset-0 ...'/> as the first child, then <div class='relative min-h-full flex items-start justify-center p-0 sm:p-6 lg:p-10'>{sheet}</div> as the second child. The second sibling, being relatively positioned and at least viewport-tall, paints above the fixed backdrop in the default stacking context and intercepts pointer events in the empty area surrounding the white sheet. Reproduction: open any boat modal, click any blurred-dark area outside the white card — modal stays open. Fix: either move click handling onto the wrapper (with target===currentTarget guard) or invert the structure so the backdrop wraps the sheet and stopPropagation is applied to the sheet."
+}

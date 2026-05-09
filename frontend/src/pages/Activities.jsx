@@ -40,7 +40,7 @@ export default function Activities() {
               close friend. Until then, message us — we'll plan everything by hand.
             </p>
             <Link
-              to="/book"
+              to="/experiences"
               data-testid="activities-book-btn"
               className="mt-10 inline-flex items-center gap-3 px-7 py-4 bg-sxm-deep text-white hover:bg-sxm-coral hover:text-sxm-deep transition-colors text-sm tracking-wider rounded-sm"
             >
