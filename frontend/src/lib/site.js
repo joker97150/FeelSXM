@@ -3,11 +3,11 @@ export const SITE = {
   name: "Feel SXM",
   tagline: "Private boat charters & island experiences",
   // WhatsApp number must be in international format without "+" or spaces for wa.me
-  whatsappNumber: "15550001234", // PLACEHOLDER — replace with real number e.g. 590xxxxxxx
-  whatsappDisplay: "+1 (555) 000-1234",
+  whatsappNumber: "590690568995",
+  whatsappDisplay: "+590 690 56 89 95",
   email: "hello@feelsxm.com",
-  instagram: "feelsxm",
-  instagramUrl: "https://instagram.com/feelsxm",
+  instagram: "FEELSXM",
+  instagramUrl: "https://instagram.com/FEELSXM",
   location: "Saint-Martin · French West Indies",
 };
 
