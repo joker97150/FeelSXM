@@ -545,8 +545,7 @@ export const SERVICES = [
   {
     title: "Jet ski & water toys",
     desc: "Half-day adventures across the lagoon and hidden coves.",
-    image:
-      "https://images.unsplash.com/photo-1764132868176-e1abc06ae538?crop=entropy&cs=srgb&fm=jpg&q=85&w=1200&auto=format&fit=crop",
+    image: "/jetski/jetski_service.jpg",
     href: "/jetski",
   },
   {
