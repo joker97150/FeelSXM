@@ -27,6 +27,7 @@ export const JETSKI_RIDES = [
     description:
       "A short, scenic loop along the protected northern coast — perfect for a first-time experience without committing to a full tour.",
     map: "/jetski/map-discovery-1h.jpg",
+    photo: "/jetski/photo-discovery-1h.jpg",
     prices: {
       1: { price: "€120", note: "with private instructor" },
       2: { price: "€200" },
@@ -44,6 +45,7 @@ export const JETSKI_RIDES = [
     description:
       "Same scenic loop with a bit more time on the water — explore the protected coves, snap photos, take it slow.",
     map: "/jetski/map-discovery-1h30.jpg",
+    photo: "/jetski/photo-discovery-1h30.jpg",
     prices: {
       1: { price: "€150", note: "with private instructor" },
       2: { price: "€240" },
@@ -61,6 +63,7 @@ export const JETSKI_RIDES = [
     description:
       "Cross into the Simpson Bay lagoon for calm, glassy water — Marigot, marina life, and a different side of the island.",
     map: "/jetski/map-lagoon-2h.jpg",
+    photo: "/jetski/photo-lagoon-2h.jpg",
     prices: {
       1: { price: "€200", note: "with private instructor" },
       2: { price: "€300" },
@@ -78,6 +81,7 @@ export const JETSKI_RIDES = [
     description:
       "Ride along Saint-Martin's most exclusive coast: Baie Rouge, Baie aux Prunes, Plum Bay and Long Bay — pristine beaches and turquoise water.",
     map: "/jetski/map-terres-basses-2h.jpg",
+    photo: "/jetski/photo-terres-basses-2h.jpg",
     prices: {
       1: { price: "€200", note: "with private instructor" },
       2: { price: "€300" },
@@ -95,6 +99,7 @@ export const JETSKI_RIDES = [
     description:
       "Head south to the Dutch side — Philipsburg, the cruise pier, Great Bay and a stop along the way to swim or grab a drink.",
     map: "/jetski/map-philipsburg-3h.jpg",
+    photo: "/jetski/photo-philipsburg-3h.jpg",
     prices: {
       1: { price: "€280", note: "with private instructor" },
       2: { price: "€440" },
@@ -112,6 +117,7 @@ export const JETSKI_RIDES = [
     description:
       "An adventurous ride to Tintamarre island — secret beaches, snorkel stop and a generous loop along the wild eastern coast.",
     map: "/jetski/map-crazy-3h.jpg",
+    photo: "/jetski/photo-crazy-3h.jpg",
     prices: {
       1: { price: "€290", note: "with private instructor" },
       2: { price: "€470" },
@@ -129,6 +135,7 @@ export const JETSKI_RIDES = [
     description:
       "Our most popular ride. Tintamarre, Pinel, the wild coast and a long swim stop — half the island, captured in one morning.",
     map: "/jetski/map-magic-4h.jpg",
+    photo: "/jetski/photo-magic-4h.jpg",
     prices: {
       1: { price: "€260", note: "with private instructor" },
       2: { price: "€420" },
@@ -146,6 +153,7 @@ export const JETSKI_RIDES = [
     description:
       "The Magic ride extended. More swim stops, more island, longer lunch break on a quiet beach.",
     map: "/jetski/map-magic-5h.jpg",
+    photo: "/jetski/photo-magic-5h.jpg",
     prices: {
       1: { price: "€310", note: "with private instructor" },
       2: { price: "€480" },
@@ -163,6 +171,7 @@ export const JETSKI_RIDES = [
     description:
       "The ultimate jet ski experience: a complete loop around Saint-Martin / Sint Maarten with multiple beach stops, lunch, and stunning views from every angle.",
     map: "/jetski/map-full-day-7h.jpg",
+    photo: "/jetski/photo-full-day-7h.jpg",
     prices: {
       1: { price: "€480", note: "with private instructor" },
       2: { price: "€800" },

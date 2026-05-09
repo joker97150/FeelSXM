@@ -91,19 +91,29 @@ export default function JetSki() {
                 data-testid={`ride-card-${ride.id}`}
                 className="group flex flex-col bg-white border border-slate-200 hover-lift"
               >
-                {/* Map with red route */}
+                {/* Photo cover with map inset */}
                 <button
                   type="button"
                   onClick={() => setOpenId(ride.id)}
                   data-testid={`ride-open-${ride.id}`}
-                  className="relative aspect-[4/3] bg-sxm-sand/30 overflow-hidden"
+                  className="relative aspect-[4/3] bg-slate-900 overflow-hidden"
                   aria-label={`See ${ride.name} ${ride.duration} details`}
                 >
                   <img
-                    src={ride.map}
-                    alt={`${ride.name} route map`}
-                    className="absolute inset-0 w-full h-full object-contain p-5 transition-transform duration-700 group-hover:scale-[1.04]"
+                    src={ride.photo}
+                    alt={`${ride.name} jet ski tour`}
+                    className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-[1.04]"
                   />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/55 via-black/15 to-transparent" />
+                  {/* Map inset bottom-left */}
+                  <div className="absolute bottom-3 left-3 w-20 h-16 sm:w-24 sm:h-20 bg-white/95 rounded-sm shadow-lg overflow-hidden ring-1 ring-white/40">
+                    <img
+                      src={ride.map}
+                      alt=""
+                      className="w-full h-full object-contain p-1"
+                    />
+                  </div>
+                  {/* Duration top-right */}
                   <div className="absolute top-4 right-4 inline-flex items-center gap-1.5 px-2.5 py-1 bg-white/90 backdrop-blur-sm text-xs text-sxm-deep font-medium rounded-sm">
                     <Clock size={12} />
                     {ride.duration}
@@ -196,13 +206,27 @@ function RideModal({ ride, onClose, onRequest }) {
           </button>
 
           <div className="grid grid-cols-1 lg:grid-cols-12">
-            {/* Map */}
-            <div className="lg:col-span-7 bg-sxm-sand/40 p-6 lg:p-10 flex items-center justify-center min-h-[360px]">
-              <img
-                src={ride.map}
-                alt={`${ride.name} route map`}
-                className="w-full h-auto max-h-[560px] object-contain"
-              />
+            {/* Photo + Map */}
+            <div className="lg:col-span-7 bg-sxm-deep">
+              <div className="aspect-[4/3] lg:aspect-auto lg:h-[420px] bg-slate-900 overflow-hidden">
+                <img
+                  src={ride.photo}
+                  alt={`${ride.name} jet ski tour`}
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="bg-sxm-sand/40 p-5 lg:p-7 flex items-center justify-center min-h-[180px]">
+                <div className="w-full max-w-md">
+                  <p className="text-xs uppercase tracking-[0.18em] text-sxm-deep mb-3 text-center">
+                    Route around the island
+                  </p>
+                  <img
+                    src={ride.map}
+                    alt={`${ride.name} route map`}
+                    className="w-full h-auto max-h-[260px] object-contain"
+                  />
+                </div>
+              </div>
             </div>
 
             {/* Info */}
