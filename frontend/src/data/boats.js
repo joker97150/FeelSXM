@@ -37,15 +37,15 @@ export const BOATS = [
       "Pina Colada blender on board",
       "Drinks & light snacks included",
     ],
-    image: "/boats/britsea_01_family.jpg",
+    image: "/boats/britsea_00_aerial.jpg",
     gallery: [
+      "/boats/britsea_00_aerial.jpg",
       "/boats/britsea_01_family.jpg",
       "/boats/britsea_02_captain.jpg",
       "/boats/britsea_03_couple.jpg",
       "/boats/britsea_04_pineapple.jpg",
       "/boats/britsea_05_engines.jpg",
-      "/boats/britsea_a.jpg",
-      "/boats/britsea_b.jpg",
+      "/boats/britsea_06_full.jpg",
     ],
     rates: {
       currency: "€",
@@ -407,7 +407,7 @@ export const SERVICES = [
   {
     title: "Private boat charters",
     desc: "Catamarans, motor yachts, powerboats — captained, fully tailored.",
-    image: "/boats/britsea_01_family.jpg",
+    image: "/boats/britsea_00_aerial.jpg",
     href: "/boats",
   },
   {
@@ -431,7 +431,7 @@ export const EXPERIENCES = [
     id: "boat",
     title: "Private boat charter",
     desc: "Choose from our hand-picked fleet of catamarans, motor yachts and powerboats. Saint-Martin, Anguilla, St Barth.",
-    image: "/boats/britsea_01_family.jpg",
+    image: "/boats/britsea_00_aerial.jpg",
     cta: "Browse the fleet",
     href: "/boats",
   },
