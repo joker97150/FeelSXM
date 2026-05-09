@@ -199,10 +199,10 @@ export const BOATS = [
     rates: {
       currency: "$",
       group: "Price for 12 pax · +$100 per extra guest",
-      destinations: ["Saint-Martin", "Anguilla", "St Barth"],
+      destinations: ["Saint-Martin", "Anguilla"],
       matrix: [
-        { label: "Half-day", duration: "4h", prices: ["$2,100", "—", "—"] },
-        { label: "Full-day", duration: "7h", prices: ["$2,900", "$3,200", "—"] },
+        { label: "Half-day", duration: "4h", prices: ["$2,100", "—"] },
+        { label: "Full-day", duration: "7h", prices: ["$2,900", "$3,200"] },
       ],
       sections: [
         {
@@ -258,7 +258,7 @@ export const BOATS = [
       currency: "$",
       destinations: ["Saint-Martin", "Anguilla", "St Barth"],
       matrix: [
-        { label: "Half-day", duration: "4h", prices: ["$1,150", "$1,300", "—"] },
+        { label: "Half-day", duration: "4h", prices: ["$1,150", "$1,300", "$1,900"] },
         { label: "Full-day", duration: "7h", prices: ["$1,800", "$1,900", "$2,100"] },
       ],
       sections: [
@@ -317,7 +317,7 @@ export const BOATS = [
       currency: "$",
       destinations: ["Saint-Martin", "Anguilla", "St Barth"],
       matrix: [
-        { label: "Half-day", duration: "4h", prices: ["$950", "—", "—"] },
+        { label: "Half-day", duration: "4h", prices: ["$950", "$1,150", "—"] },
         { label: "Full-day", duration: "7h", prices: ["$1,300", "$1,400", "$1,650"] },
       ],
       sections: [
@@ -377,7 +377,7 @@ export const BOATS = [
       currency: "$",
       destinations: ["Saint-Martin", "Anguilla", "St Barth"],
       matrix: [
-        { label: "Half-day", duration: "4h", prices: ["$950", "—", "—"] },
+        { label: "Half-day", duration: "4h", prices: ["$950", "$1,100", "—"] },
         { label: "Full-day", duration: "7h", prices: ["$1,250", "$1,350", "$1,450"] },
       ],
       sections: [
@@ -437,8 +437,8 @@ export const BOATS = [
       currency: "$",
       destinations: ["Saint-Martin", "Anguilla", "St Barth"],
       matrix: [
-        { label: "Half-day", duration: "4h", prices: ["$3,000", "$3,000", "$3,000"] },
-        { label: "Full-day", duration: "7h", prices: ["$4,500", "$4,500", "$4,500"] },
+        { label: "Half-day", duration: "4h", prices: ["$3,000", "$3,500", "—"] },
+        { label: "Full-day", duration: "7h", prices: ["$4,500", "$5,000", "$5,250"] },
       ],
       sections: [
         {
@@ -498,8 +498,8 @@ export const BOATS = [
       currency: "$",
       destinations: ["Saint-Martin", "Anguilla", "St Barth"],
       matrix: [
-        { label: "Half-day", duration: "4h", prices: ["$3,500", "$3,500", "$3,500"] },
-        { label: "Full-day", duration: "7h", prices: ["$5,000", "$5,000", "$5,000"] },
+        { label: "Half-day", duration: "4h", prices: ["$3,500", "$4,000", "—"] },
+        { label: "Full-day", duration: "7h", prices: ["$5,000", "$5,500", "$5,750"] },
       ],
       sections: [
         {
