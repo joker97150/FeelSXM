@@ -128,9 +128,13 @@ export default function BoatModal({ boat, open, onClose }) {
                 </span>
               </div>
 
-              <p className="mt-6 text-slate-700 leading-relaxed">
-                {boat.longDescription || boat.description}
-              </p>
+              <div className="mt-6 text-slate-700 leading-relaxed space-y-4">
+                {(boat.longDescription || boat.description)
+                  .split("\n\n")
+                  .map((p, i) => (
+                    <p key={i}>{p}</p>
+                  ))}
+              </div>
 
               {boat.highlights && (
                 <div className="mt-7">
