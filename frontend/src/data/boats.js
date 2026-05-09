@@ -76,7 +76,7 @@ export const BOATS = [
             r("Seanxt", "€275"),
             r("GoPro rental", "€75"),
             r("Drone footage", "€150"),
-            r("Captain's dog crew 🐶", "€50"),
+            r("Captain's dog crew 🐶", "Free"),
           ],
         },
       ],
