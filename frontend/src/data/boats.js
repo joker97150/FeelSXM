@@ -50,17 +50,12 @@ export const BOATS = [
     rates: {
       currency: "€",
       group: "Boat for 8 guests · +€50 per extra guest up to 10",
+      destinations: ["Saint-Martin", "Anguilla", "St Barth"],
+      matrix: [
+        { label: "Half-day", duration: "4h", prices: ["€800", "€900", "—"] },
+        { label: "Full-day", duration: "8h", prices: ["€1,300", "€1,500", "€1,600"] },
+      ],
       sections: [
-        {
-          title: "Day charters",
-          items: [
-            r("Half-day Saint-Martin (9–13h or 13–17h)", "€800"),
-            r("Full-day Saint-Martin (9h–17h)", "€1,300"),
-            r("Half-day Anguilla South / AXA (4h)", "€900"),
-            r("Full-day Anguilla (9h–17h)", "€1,500"),
-            r("Full-day St Barth (9h–17h)", "€1,600"),
-          ],
-        },
         {
           title: "Special trips",
           items: [
@@ -204,15 +199,12 @@ export const BOATS = [
     rates: {
       currency: "$",
       group: "Price for 12 pax · +$100 per extra guest",
+      destinations: ["Saint-Martin", "Anguilla", "St Barth"],
+      matrix: [
+        { label: "Half-day", duration: "4h", prices: ["$2,100", "—", "—"] },
+        { label: "Full-day", duration: "7h", prices: ["$2,900", "$3,200", "—"] },
+      ],
       sections: [
-        {
-          title: "Day charters from Saint-Martin",
-          items: [
-            r("Half-day SXM (4h)", "$2,100"),
-            r("Full-day SXM (7h)", "$2,900"),
-            r("Full-day Anguilla", "$3,200 + $35/pp tax"),
-          ],
-        },
         {
           title: "Add-ons",
           items: [
@@ -224,7 +216,10 @@ export const BOATS = [
           ],
         },
       ],
-      notes: ["+20% surcharge during Christmas period (Dec 20 – Jan 7)."],
+      notes: [
+        "Anguilla immigration tax: $35/pp (not included).",
+        "+20% surcharge during Christmas period (Dec 20 – Jan 7).",
+      ],
     },
   },
   {
@@ -261,19 +256,12 @@ export const BOATS = [
     ],
     rates: {
       currency: "$",
+      destinations: ["Saint-Martin", "Anguilla", "St Barth"],
+      matrix: [
+        { label: "Half-day", duration: "4h", prices: ["$1,150", "$1,300", "—"] },
+        { label: "Full-day", duration: "7h", prices: ["$1,800", "$1,900", "$2,100"] },
+      ],
       sections: [
-        {
-          title: "Half-day (4h)",
-          items: [r("Saint-Martin", "$1,150"), r("Anguilla", "$1,300")],
-        },
-        {
-          title: "Full-day (7h)",
-          items: [
-            r("Saint-Martin", "$1,800"),
-            r("Anguilla", "$1,900"),
-            r("St Barth", "$2,100"),
-          ],
-        },
         {
           title: "Transfers & add-ons",
           items: [
@@ -287,7 +275,7 @@ export const BOATS = [
         },
       ],
       notes: [
-        "Taxes: $35/pp Anguilla · $20/pp St Barth.",
+        "Immigration tax: $35/pp Anguilla · $20/pp St Barth (not included).",
         "+20% surcharge during Christmas period (Dec 20 – Jan 7).",
       ],
     },
@@ -327,19 +315,12 @@ export const BOATS = [
     ],
     rates: {
       currency: "$",
+      destinations: ["Saint-Martin", "Anguilla", "St Barth"],
+      matrix: [
+        { label: "Half-day", duration: "4h", prices: ["$950", "—", "—"] },
+        { label: "Full-day", duration: "7h", prices: ["$1,300", "$1,400", "$1,650"] },
+      ],
       sections: [
-        {
-          title: "Half-day (4h)",
-          items: [r("Saint-Martin", "$950")],
-        },
-        {
-          title: "Full-day (7h)",
-          items: [
-            r("Saint-Martin", "$1,300"),
-            r("Anguilla", "$1,400"),
-            r("St Barth", "$1,650"),
-          ],
-        },
         {
           title: "Transfers & add-ons",
           items: [
@@ -353,7 +334,7 @@ export const BOATS = [
         },
       ],
       notes: [
-        "Taxes: $35/pp Anguilla · $20/pp St Barth.",
+        "Immigration tax: $35/pp Anguilla · $20/pp St Barth (not included).",
         "+20% surcharge during Christmas period (Dec 20 – Jan 7).",
       ],
     },
@@ -394,19 +375,12 @@ export const BOATS = [
     ],
     rates: {
       currency: "$",
+      destinations: ["Saint-Martin", "Anguilla", "St Barth"],
+      matrix: [
+        { label: "Half-day", duration: "4h", prices: ["$950", "—", "—"] },
+        { label: "Full-day", duration: "7h", prices: ["$1,250", "$1,350", "$1,450"] },
+      ],
       sections: [
-        {
-          title: "Half-day (4h)",
-          items: [r("Saint-Martin", "$950")],
-        },
-        {
-          title: "Full-day (7h)",
-          items: [
-            r("Saint-Martin", "$1,250"),
-            r("Anguilla", "$1,350"),
-            r("St Barth", "$1,450"),
-          ],
-        },
         {
           title: "Transfers & add-ons",
           items: [
@@ -420,7 +394,7 @@ export const BOATS = [
         },
       ],
       notes: [
-        "Taxes: $35/pp Anguilla · $20/pp St Barth.",
+        "Immigration tax: $35/pp Anguilla · $20/pp St Barth (not included).",
         "+20% surcharge during Christmas period (Dec 20 – Jan 7).",
       ],
     },
@@ -461,14 +435,12 @@ export const BOATS = [
     ],
     rates: {
       currency: "$",
+      destinations: ["Saint-Martin", "Anguilla", "St Barth"],
+      matrix: [
+        { label: "Half-day", duration: "4h", prices: ["$3,000", "$3,000", "$3,000"] },
+        { label: "Full-day", duration: "7h", prices: ["$4,500", "$4,500", "$4,500"] },
+      ],
       sections: [
-        {
-          title: "Day charters from Saint-Martin",
-          items: [
-            r("Half-day SXM (4h)", "$3,000"),
-            r("Full-day SXM (7h)", "$4,500"),
-          ],
-        },
         {
           title: "Add-ons",
           items: [
@@ -482,7 +454,7 @@ export const BOATS = [
         },
       ],
       notes: [
-        "Immigration tax: $20–$45 per person (Anguilla / St Barth) — added at booking.",
+        "Immigration clearance: $20–$45 per person for Anguilla / St Barth (added at booking).",
         "+20% surcharge during Christmas period (Dec 20 – Jan 7).",
         "Card fees not included.",
       ],
@@ -524,14 +496,12 @@ export const BOATS = [
     ],
     rates: {
       currency: "$",
+      destinations: ["Saint-Martin", "Anguilla", "St Barth"],
+      matrix: [
+        { label: "Half-day", duration: "4h", prices: ["$3,500", "$3,500", "$3,500"] },
+        { label: "Full-day", duration: "7h", prices: ["$5,000", "$5,000", "$5,000"] },
+      ],
       sections: [
-        {
-          title: "Day charters from Saint-Martin",
-          items: [
-            r("Half-day SXM (4h)", "$3,500"),
-            r("Full-day SXM (7h)", "$5,000"),
-          ],
-        },
         {
           title: "Add-ons",
           items: [
@@ -545,7 +515,7 @@ export const BOATS = [
         },
       ],
       notes: [
-        "Immigration tax: $20–$45 per person (Anguilla / St Barth) — added at booking.",
+        "Immigration clearance: $20–$45 per person for Anguilla / St Barth (added at booking).",
         "+20% surcharge during Christmas period (Dec 20 – Jan 7).",
         "Card fees not included.",
       ],

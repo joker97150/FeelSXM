@@ -158,6 +158,64 @@ export default function BoatModal({ boat, open, onClose }) {
                     <p className="text-xs text-slate-500 mb-5">{boat.rates.group}</p>
                   )}
 
+                  {/* Destination matrix */}
+                  {boat.rates.destinations && boat.rates.matrix && (
+                    <div
+                      className="mb-7 overflow-x-auto -mx-1 px-1"
+                      data-testid="rates-matrix"
+                    >
+                      <table className="w-full text-sm border-separate border-spacing-0">
+                        <thead>
+                          <tr>
+                            <th className="text-left py-2.5 pr-3 text-xs uppercase tracking-[0.18em] text-sxm-turq font-medium align-bottom">
+                              Trip
+                            </th>
+                            {boat.rates.destinations.map((d) => (
+                              <th
+                                key={d}
+                                className="text-right py-2.5 pl-3 text-xs uppercase tracking-[0.18em] text-sxm-turq font-medium align-bottom whitespace-nowrap"
+                              >
+                                {d}
+                              </th>
+                            ))}
+                          </tr>
+                        </thead>
+                        <tbody>
+                          {boat.rates.matrix.map((row) => (
+                            <tr key={row.label}>
+                              <td className="py-3 pr-3 border-t border-slate-200">
+                                <div className="text-sxm-deep font-medium">
+                                  {row.label}
+                                </div>
+                                {row.duration && (
+                                  <div className="text-xs text-slate-400">
+                                    {row.duration}
+                                  </div>
+                                )}
+                              </td>
+                              {row.prices.map((p, i) => (
+                                <td
+                                  key={i}
+                                  className="py-3 pl-3 border-t border-slate-200 text-right whitespace-nowrap tabular-nums"
+                                >
+                                  <span
+                                    className={
+                                      p === "—"
+                                        ? "text-slate-300"
+                                        : "text-sxm-deep font-medium"
+                                    }
+                                  >
+                                    {p}
+                                  </span>
+                                </td>
+                              ))}
+                            </tr>
+                          ))}
+                        </tbody>
+                      </table>
+                    </div>
+                  )}
+
                   <div className="space-y-6">
                     {boat.rates.sections.map((s) => (
                       <div key={s.title}>
