@@ -127,7 +127,6 @@ export const BOATS = [
           destinations: ["Stay in SXM", "→ St Barth", "→ Anguilla"],
           rows: [
             { label: "Half-day", duration: "4h", prices: ["€3,300", "€4,100", "€3,800"] },
-            { label: "Half-day", duration: "6h", prices: ["€4,000", "—", "—"] },
             { label: "Full-day", duration: "8h", prices: ["€4,500", "€4,950", "€4,800"] },
             { label: "Sunset cruise", duration: "evening", prices: ["€2,150", "—", "—"] },
           ],
