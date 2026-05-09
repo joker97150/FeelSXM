@@ -1,0 +1,193 @@
+{
+  "project_name": "Feel SXM",
+  "app_type": "marketing_site",
+  "target_audience": "American tourists visiting Saint-Martin seeking premium boat charters",
+  "theme": {
+    "mode": "light",
+    "archetype": "Archetype 1 (Organic & Earthy) + Archetype 5 (Jewel & Luxury Light Variant)",
+    "vibe": "Accessible luxury, turquoise sea, premium Caribbean, modern, minimalistic",
+    "colors": {
+      "primary": "#0A3641",
+      "primary_foreground": "#FFFFFF",
+      "secondary": "#38B2CE",
+      "secondary_foreground": "#FFFFFF",
+      "accent_sand": "#F3EAD3",
+      "accent_coral": "#F4A261",
+      "background": "#FAFAFA",
+      "surface": "#FFFFFF",
+      "text_main": "#0F172A",
+      "text_muted": "#64748B",
+      "border": "#E2E8F0"
+    },
+    "typography": {
+      "heading_font": "Cabinet Grotesk",
+      "body_font": "Outfit",
+      "rules": {
+        "h1": "text-4xl sm:text-5xl lg:text-6xl tracking-tight leading-none font-light",
+        "h2": "text-2xl sm:text-3xl lg:text-4xl tracking-tight font-medium",
+        "h3": "text-xl sm:text-2xl font-medium",
+        "body": "text-base leading-relaxed font-light",
+        "overline": "text-xs tracking-[0.2em] uppercase font-semibold text-primary"
+      }
+    },
+    "spacing_and_layout": {
+      "philosophy": "Generous Spacing Philosophy (p-12 to p-24 for sections). Minimal text, let large photos breathe.",
+      "grid_strategy": "MODE A: TETRIS GRID. Asymmetrical grids for image galleries and services. Use gap-8 or gap-12.",
+      "hero_overlay": "bg-black/30 for real photos to keep them visible while ensuring text contrast. Use text-shadow if needed.",
+      "surface_styles": {
+        "header": "Crystal Glass (bg-white/70 backdrop-blur-xl border-b border-white/20 shadow-sm)",
+        "cards": "Flat background, 0px or 4px subtle border-radius, delicate 1px border (#E2E8F0), soft shadow-sm on hover",
+        "footer": "Dark contrast footer (bg-[#0A3641] text-white py-20)"
+      }
+    }
+  },
+  "pages": [
+    {
+      "path": "/",
+      "name": "Home",
+      "sections": [
+        {
+          "name": "Hero",
+          "layout": "Full screen (h-screen)",
+          "content": "Image of catamaran in turquoise water. Title: 'Experience Saint-Martin from the water'. Subtitle: 'Private boat charters & island experiences'. CTA: 'Book your experience'."
+        },
+        {
+          "name": "What we offer",
+          "layout": "Bento Grid (3 cards)",
+          "content": "Cards for: Private boat (Sailboat/Catamaran), Jet ski, Restaurants & spots. Minimalist hover effects."
+        },
+        {
+          "name": "Why Feel SXM",
+          "layout": "3-column grid",
+          "content": "3 arguments: Local expertise, Curated partners, Seamless booking. Icon + Title + Short text."
+        },
+        {
+          "name": "Testimonials",
+          "layout": "Horizontal scroll or simple grid",
+          "content": "Quotes from clients highlighting the premium experience."
+        }
+      ]
+    },
+    {
+      "path": "/boats",
+      "name": "Bateaux (Fleet)",
+      "sections": [
+        {
+          "name": "Header",
+          "layout": "py-24 bg-accent_sand/30",
+          "content": "Title: 'Our Fleet'. Filter buttons: Catamaran, Sailboat, Powerboat."
+        },
+        {
+          "name": "Fleet Grid",
+          "layout": "grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8",
+          "content": "Boat cards with photo, name, short desc, capacity, approx price, CTA 'Request this boat'."
+        }
+      ]
+    },
+    {
+      "path": "/activities",
+      "name": "Activities",
+      "sections": [
+        {
+          "name": "Placeholder",
+          "layout": "h-[60vh] flex items-center justify-center text-center",
+          "content": "Title: 'Jet ski, restaurants, island spots — coming soon'."
+        }
+      ]
+    },
+    {
+      "path": "/about",
+      "name": "About",
+      "sections": [
+        {
+          "name": "Story",
+          "layout": "2-column (Image Left, Text Right) py-24",
+          "content": "Short text about local captain. Ambient photo of captain/lifestyle."
+        }
+      ]
+    },
+    {
+      "path": "/book",
+      "name": "Book (Formulaire)",
+      "sections": [
+        {
+          "name": "Booking Form",
+          "layout": "Max-w-2xl mx-auto py-24",
+          "content": "Fields: Name, Email, WhatsApp, Date, Persons, Experience Type, Message. Submit button opens pre-filled WhatsApp link."
+        }
+      ]
+    }
+  ],
+  "components": {
+    "Header": "Fixed top, glassmorphism. Logo left, Nav center (desktop), CTA right. Mobile hamburger menu.",
+    "Footer": "Dark theme. Links: WhatsApp, Instagram, Email. Minimalist.",
+    "Button": "Shadcn based. Primary: bg-[#0A3641] text-white hover:bg-[#0A3641]/90 rounded-none or rounded-sm. Secondary: Outline.",
+    "Cards": "Image top, content bottom. Clean padding, no heavy borders."
+  },
+  "media": {
+    "images": [
+      {
+        "category": "hero",
+        "description": "Catamaran sailing in clear turquoise ocean water near beach",
+        "url": "https://images.unsplash.com/photo-1763402084814-e6a988900ba2?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1Mjh8MHwxfHNlYXJjaHwxfHxsdXh1cnklMjBjYXRhbWFyYW4lMjB0dXJxdW9pc2UlMjB3YXRlcnxlbnwwfHx8fDE3NzgzMzQ2ODV8MA&ixlib=rb-4.1.0&q=85"
+      },
+      {
+        "category": "hero_abstract_fallback",
+        "description": "Abstract ocean background generated via AI",
+        "url": "https://static.prod-images.emergentagent.com/jobs/2b372b58-57bd-43c5-9386-fad1e813a33f/images/4bbb9e775ec6e4e904fbda2f59b05a2f4b3777447574023294d0da2f8769fdab.png"
+      },
+      {
+        "category": "service_private_boat",
+        "description": "Bird's eye view of luxury catamaran",
+        "url": "https://images.unsplash.com/photo-1560424730-ec1c186a7573?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1Mjh8MHwxfHNlYXJjaHwyfHxsdXh1cnklMjBjYXRhbWFyYW4lMjB0dXJxdW9pc2UlMjB3YXRlcnxlbnwwfHx8fDE3NzgzMzQ2ODV8MA&ixlib=rb-4.1.0&q=85"
+      },
+      {
+        "category": "service_jet_ski",
+        "description": "People riding jet skis on water near beach",
+        "url": "https://images.unsplash.com/photo-1764132868176-e1abc06ae538?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1MDZ8MHwxfHNlYXJjaHwyfHxqZXQlMjBza2klMjBvY2VhbnxlbnwwfHx8fDE3NzgzMzQ2ODV8MA&ixlib=rb-4.1.0&q=85"
+      },
+      {
+        "category": "service_restaurant",
+        "description": "Beachside restaurant with surfboards and beach views",
+        "url": "https://images.unsplash.com/photo-1743413515530-b45d0ae079d3?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMzl8MHwxfHNlYXJjaHwxfHxjYXJpYmJlYW4lMjBiZWFjaCUyMHJlc3RhdXJhbnR8ZW58MHx8fHwxNzc4MzM0Njg1fDA&ixlib=rb-4.1.0&q=85"
+      },
+      {
+        "category": "about_captain",
+        "description": "Man sitting on a boat (captain portrait)",
+        "url": "https://images.unsplash.com/photo-1726591062929-14112c3cfe54?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA2OTV8MHwxfHNlYXJjaHwxfHxib2F0JTIwY2FwdGFpbiUyMHBvcnRyYWl0fGVufDB8fHx8MTc3ODMzNDY4NXww&ixlib=rb-4.1.0&q=85"
+      },
+      {
+        "category": "boat_sailboat",
+        "description": "Sailboat floating in blue bay water",
+        "url": "https://images.unsplash.com/photo-1623419988909-c60092c8bd6a?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1Mjh8MHwxfHNlYXJjaHwzfHxsdXh1cnklMjBjYXRhbWFyYW4lMjB0dXJxdW9pc2UlMjB3YXRlcnxlbnwwfHx8fDE3NzgzMzQ2ODV8MA&ixlib=rb-4.1.0&q=85"
+      },
+      {
+        "category": "boat_powerboat",
+        "description": "Couple of speedboats sitting in water",
+        "url": "https://images.unsplash.com/photo-1709187850087-06cf153f0e16?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMzV8MHwxfHNlYXJjaHwyfHxzcGVlZGJvYXQlMjBvY2VhbnxlbnwwfHx8fDE3NzgzMzQ2ODV8MA&ixlib=rb-4.1.0&q=85"
+      },
+      {
+        "category": "location_saint_martin",
+        "description": "Beach crowd in Saint Martin",
+        "url": "https://images.unsplash.com/photo-1665805397368-d3365df16e8b?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1MDV8MHwxfHNlYXJjaHwyfHxzYWludCUyMG1hcnRpbiUyMGlzbGFuZCUyMGNhcmliYmVhbnxlbnwwfHx8fDE3NzgzMzQ2ODV8MA&ixlib=rb-4.1.0&q=85"
+      }
+    ]
+  },
+  "technical_requirements": {
+    "routing": "React Router setup with multiple pages.",
+    "styling": "Tailwind CSS + Shadcn UI.",
+    "icons": "lucide-react",
+    "motion": "Framer Motion for subtle scroll reveals (fade-up) and hover states.",
+    "testing": "All interactive elements must have data-testid attributes (e.g., data-testid='book-experience-btn').",
+    "whatsapp_integration": "The booking form submission should construct a URL like: https://wa.me/1234567890?text=Hello%20... and open in a new tab."
+  },
+  "instructions_to_main_agent": [
+    "Strictly follow the color palette and typography rules. Avoid generic fonts like Inter for headings.",
+    "Implement the 5 requested pages: Home (/), Boats (/boats), Activities (/activities), About (/about), and Book (/book).",
+    "For the Boats page, build a responsive grid of yacht cards with a filtering mechanism (Catamaran, Sailboat, Powerboat).",
+    "For the booking form, use standard HTML/Shadcn form elements. On submit, intercept the event to build a WhatsApp message string using the form data, and redirect using window.open('https://wa.me/<number>?text=<encoded_string>', '_blank').",
+    "Maintain the 'luxe accessible' and 'premium Caribbean' vibe through generous padding, large imagery, and thin borders/dividers.",
+    "Make sure the navbar is fully responsive with a hamburger menu on mobile.",
+    "Use the specific Unsplash image URLs provided in the media section. DO NOT use placeholder services."
+  ]
+}
